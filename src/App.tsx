@@ -1,72 +1,27 @@
-const sets = [
-  {
-    name: "Innistrad: Midnight Hunt",
-    code: "mid",
-  },
-  {
-    name: "Innistrad: Crimson Vow",
-    code: "vow",
-  },
-  {
-    name: "Kamigawa: Neon Dynasty",
-    code: "nkd",
-  },
-  {
-    name: "Streets of New Capenna",
-    code: "snc",
-  },
-  {
-    name: "Dominaria United",
-    code: "dmu",
-  },
-  {
-    name: "The Brothers' War",
-    code: "bro",
-  },
-  {
-    name: "Phyrexia: All Will Be One",
-    code: "one",
-  },
-  {
-    name: "March of the Machine",
-    code: "mom",
-  },
-  {
-    name: "March of the Machine: The Aftermath",
-    code: "mat",
-  },
-  {
-    name: "Wilds of Eldraine",
-    code: "woe",
-  },
-  {
-    name: "The Lost Caverns of Ixalan",
-    code: "lci",
-  },
-  {
-    name: "Murders at Karlov Manor",
-    code: "mkm",
-  },
-  {
-    name: "Outlaws of Thunder Junction",
-    code: "otj",
-  },
-];
+import data from "@/data/data.json";
 
 function App() {
   return (
     <div className="container">
-      <h1>MTG Sets</h1>
-      <ul>
-        {sets.map((set) => (
-          <li key={set.code}>
-            <i
-              className={`ss ss-${set.code} ss-2x size-8 inline-flex items-center justify-center`}
-            ></i>{" "}
-            {set.name} ({set.code.toUpperCase()})
-          </li>
-        ))}
-      </ul>
+      <h1 className="text-2xl font-black">MTG Sets</h1>
+
+      {data.standard.map((set, i) => (
+        <div key={i} className="mt-4">
+          <h2 className="text-lg font-bold mb-2">{set.legalTill}</h2>
+          <ul className="">
+            {set.sets.map((s, j) => (
+              <li key={j}>
+                <a href={`https://scryfall.com/sets/${s.code}`}>
+                  <i
+                    className={`ss ss-${s.code} ss-2x size-8 inline-flex items-center justify-center`}
+                  ></i>{" "}
+                  {s.name} ({s.code.toUpperCase()})
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </div>
   );
 }

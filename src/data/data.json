@@ -1,7 +1,71 @@
-[
-  {
-    "id": 1,
-    "name": "John Doe",
-    "email": "asd"
-  }
-]
+{
+  "standard": [
+    {
+      "legalTill": "Legal until Q4 2024",
+      "sets": [
+        {
+          "name": "Innistrad: Midnight Hunt",
+          "code": "mid"
+        },
+        {
+          "name": "Innistrad: Crimson Vow",
+          "code": "vow"
+        },
+        {
+          "name": "Kamigawa: Neon Dynasty",
+          "code": "nkd"
+        },
+        {
+          "name": "Streets of New Capenna",
+          "code": "snc"
+        }
+      ]
+    },
+    {
+      "legalTill": "Legal until Q4 2025",
+      "sets": [
+        {
+          "name": "Dominaria United",
+          "code": "dmu"
+        },
+        {
+          "name": "The Brothers' War",
+          "code": "bro"
+        },
+        {
+          "name": "Phyrexia: All Will Be One",
+          "code": "one"
+        },
+        {
+          "name": "March of the Machine",
+          "code": "mom"
+        },
+        {
+          "name": "March of the Machine: The Aftermath",
+          "code": "mat"
+        }
+      ]
+    },
+    {
+      "legalTill": "Legal until Q4 2026",
+      "sets": [
+        {
+          "name": "Wilds of Eldraine",
+          "code": "woe"
+        },
+        {
+          "name": "The Lost Caverns of Ixalan",
+          "code": "lci"
+        },
+        {
+          "name": "Murders at Karlov Manor",
+          "code": "mkm"
+        },
+        {
+          "name": "Outlaws of Thunder Junction",
+          "code": "otj"
+        }
+      ]
+    }
+  ]
+}
