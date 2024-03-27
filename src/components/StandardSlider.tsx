@@ -1,9 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import data from "@/data/data.json";
-
 import "swiper/css";
 
-export default function standardSlider() {
+interface StandardSliderProps {
+  className: string;
+}
+
+export default function standardSlider(props: StandardSliderProps) {
+  const { className } = props;
   function checkReleased(releaseDate: string) {
     const today = new Date();
     const release = new Date(releaseDate);
@@ -12,17 +16,16 @@ export default function standardSlider() {
 
   return (
     <>
-      <p>Current Standard</p>
       <Swiper
         slidesPerView={3}
         spaceBetween={10}
         pagination={{
           clickable: true,
         }}
-        className="mySwiper"
+        className={`${className} mySwiper`}
       >
         {data.standard.map((block, i) => (
-          <SwiperSlide className="bg-secondary p-4 rounded-xl" key={i}>
+          <SwiperSlide className="bg-secondary p-4 rounded-xl h-auto" key={i}>
             <h2 className="text-sm text-foreground/50 mb-4">
               {block.legalTill}
             </h2>
@@ -32,7 +35,7 @@ export default function standardSlider() {
                 <li key={set.code}>
                   <a
                     href={`https://scryfall.com/sets/${set.code}`}
-                    className={`hover:text-primary ${
+                    className={`hover:underline ${
                       !checkReleased(set.releaseDate) && "opacity-50"
                     }`}
                   >
