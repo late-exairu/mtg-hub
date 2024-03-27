@@ -10,8 +10,6 @@ export default function standardSlider() {
     return today >= release;
   }
 
-  checkReleased(data.standard[0].sets[0]);
-
   return (
     <>
       <p>Current Standard</p>
@@ -28,9 +26,10 @@ export default function standardSlider() {
             <h2 className="text-sm text-foreground/50 mb-4">
               {block.legalTill}
             </h2>
+
             <ul className="flex flex-col gap-1">
               {block.sets.map((set) => (
-                <li key={set.code} className="flex items-center">
+                <li key={set.code}>
                   <a
                     href={`https://scryfall.com/sets/${set.code}`}
                     className={`hover:text-primary ${
