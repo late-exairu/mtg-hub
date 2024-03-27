@@ -5,19 +5,23 @@
       "sets": [
         {
           "name": "Innistrad: Midnight Hunt",
-          "code": "mid"
+          "code": "mid",
+          "releaseDate": "2021-09-24"
         },
         {
           "name": "Innistrad: Crimson Vow",
-          "code": "vow"
+          "code": "vow",
+          "releaseDate": "2021-11-19"
         },
         {
           "name": "Kamigawa: Neon Dynasty",
-          "code": "nkd"
+          "code": "neo",
+          "releaseDate": "2022-02-18"
         },
         {
           "name": "Streets of New Capenna",
-          "code": "snc"
+          "code": "snc",
+          "releaseDate": "2022-04-29"
         }
       ]
     },
@@ -26,23 +30,28 @@
       "sets": [
         {
           "name": "Dominaria United",
-          "code": "dmu"
+          "code": "dmu",
+          "releaseDate": "2022-09-09"
         },
         {
           "name": "The Brothers' War",
-          "code": "bro"
+          "code": "bro",
+          "releaseDate": "2022-11-18"
         },
         {
           "name": "Phyrexia: All Will Be One",
-          "code": "one"
+          "code": "one",
+          "releaseDate": "2023-02-03"
         },
         {
           "name": "March of the Machine",
-          "code": "mom"
+          "code": "mom",
+          "releaseDate": "2023-04-21"
         },
         {
           "name": "March of the Machine: The Aftermath",
-          "code": "mat"
+          "code": "mat",
+          "releaseDate": "2023-05-12"
         }
       ]
     },
@@ -51,19 +60,38 @@
       "sets": [
         {
           "name": "Wilds of Eldraine",
-          "code": "woe"
+          "code": "woe",
+          "releaseDate": "2023-09-08"
         },
         {
           "name": "The Lost Caverns of Ixalan",
-          "code": "lci"
+          "code": "lci",
+          "releaseDate": "2023-11-17"
         },
         {
           "name": "Murders at Karlov Manor",
-          "code": "mkm"
+          "code": "mkm",
+          "releaseDate": "2024-02-09"
         },
         {
           "name": "Outlaws of Thunder Junction",
-          "code": "otj"
+          "code": "otj",
+          "releaseDate": "2024-04-19"
+        }
+      ]
+    },
+    {
+      "legalTill": "Legal until Q4 2027",
+      "sets": [
+        {
+          "name": "Bloomburrow",
+          "code": "blb",
+          "releaseDate": "2024-08-02"
+        },
+        {
+          "name": "Duskmourn: House of Horror",
+          "code": "dsk",
+          "releaseDate": "Q4 2024"
         }
       ]
     }
