@@ -1,4 +1,5 @@
 import StandardSlider from "@/components/StandardSlider";
+import BannedCards from "./components/BannedCards";
 
 function App() {
   return (
@@ -6,6 +7,8 @@ function App() {
       <h1 className="text-3xl font-black">MTGHub</h1>
 
       <StandardSlider className="mt-4" />
+
+      <BannedCards />
     </div>
   );
 }
