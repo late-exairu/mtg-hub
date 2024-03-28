@@ -19,10 +19,16 @@ export default function standardSlider(props: StandardSliderProps) {
       <Swiper
         slidesPerView={3}
         spaceBetween={10}
+        direction={"vertical"}
         pagination={{
           clickable: true,
         }}
-        className={`${className} mySwiper`}
+        breakpoints={{
+          768: {
+            direction: "horizontal",
+          },
+        }}
+        className={`${className} mySwiper h-[800px] md:h-auto`}
       >
         {data.standard.map((block, i) => (
           <SwiperSlide className="bg-secondary p-4 rounded-xl h-auto" key={i}>

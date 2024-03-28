@@ -6,12 +6,12 @@ function App() {
     <div className="container">
       <h1 className="text-3xl font-black">MTGHub</h1>
 
-      <h3 className="text-2xl font-bold">Calendar</h3>
+      <h3 className="text-2xl my-2 font-bold">Calendar</h3>
 
-      <h3 className="text-2xl font-bold">Standard</h3>
+      <h3 className="text-2xl my-2 font-bold">Standard</h3>
       <StandardSlider className="mt-4" />
 
-      <h3 className="text-2xl font-bold">Banned cards</h3>
+      <h3 className="text-2xl my-2 font-bold">Banned cards</h3>
       <p className="mb-4">
         Despite being part of legal sets, the following cards are explicitly not
         allowed in decks for this format.
