@@ -1,22 +1,29 @@
 import StandardSlider from "@/components/StandardSlider";
-import BannedCards from "./components/BannedCards";
+import BannedCards from "@/components/BannedCards";
+import Section from "@/components/Section";
 
 function App() {
   return (
     <div className="container">
       <h1 className="text-3xl font-black">MTGHub</h1>
 
-      <h3 className="text-2xl my-2 font-bold">Calendar</h3>
+      <Section>
+        <h3 className="text-2xl font-bold">Calendar</h3>
+      </Section>
 
-      <h3 className="text-2xl my-2 font-bold">Standard</h3>
-      <StandardSlider className="mt-4" />
+      <Section>
+        <h3 className="text-2xl font-bold">Standard</h3>
+        <StandardSlider className="mt-4" />
+      </Section>
 
-      <h3 className="text-2xl my-2 font-bold">Banned cards</h3>
-      <p className="mb-4">
-        Despite being part of legal sets, the following cards are explicitly not
-        allowed in decks for this format.
-      </p>
-      <BannedCards />
+      <Section>
+        <h3 className="text-2xl font-bold">Banned cards</h3>
+        <p className="mb-6">
+          Despite being part of legal sets, the following cards are explicitly
+          not allowed in decks for this format.
+        </p>
+        <BannedCards />
+      </Section>
     </div>
   );
 }
