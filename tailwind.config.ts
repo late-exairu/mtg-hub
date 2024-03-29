@@ -20,9 +20,11 @@ const config = {
     },
     container: {
       center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
+      padding: {
+        DEFAULT: "10px",
+        sm: "30px",
+        lg: "40px",
+        xl: "60px",
       },
     },
     extend: {
