@@ -46,7 +46,7 @@ export default function standardSlider(props: StandardSliderProps) {
                     }`}
                   >
                     <i
-                      className={`ss ss-${set.code} text-2xl size-6 mr-1 inline-flex items-center justify-center`}
+                      className={`ss ss-${set.code} mt-[-3px] text-xl size-5 mr-1 inline-flex items-center justify-center`}
                     ></i>{" "}
                     <span>
                       {set.name} ({set.code.toUpperCase()})
