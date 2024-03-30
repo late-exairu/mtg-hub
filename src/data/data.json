@@ -1,7 +1,8 @@
 {
   "standard": [
     {
-      "legalTill": "Legal until Q4 2024",
+      "legalTill": "Rotates Q4 2024, with release of ",
+      "rotateWith": "blb",
       "releaseYear": 2021,
       "sets": [
         {
