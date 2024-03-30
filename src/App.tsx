@@ -12,10 +12,10 @@ function App() {
         <h3 className="text-2xl font-bold">Calendar</h3>
       </Section>
 
-      <Section>
+      {/* <Section>
         <h3 className="text-2xl font-bold">Standard</h3>
         <StandardSlider className="mt-4" />
-      </Section>
+      </Section> */}
 
       <Section>
         <h3 className="text-2xl font-bold">Standard</h3>

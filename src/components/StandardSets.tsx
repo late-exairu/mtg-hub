@@ -1,4 +1,11 @@
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+
 import data from "@/data/data.json";
+import SetPopover from "./SetPopover";
 interface StandardSliderProps {
   className: string;
 }
@@ -32,19 +39,20 @@ export default function StandardSets(props: StandardSliderProps) {
                       : "opacity-100"
                   }`}
                 >
-                  <a
-                    href={`https://scryfall.com/sets/${set.code}`}
-                    className={`hover:underline bg-secondary rounded-[5px] block shadow-sm shadow-ring ${
-                      !checkReleased(set.releaseDate) && "opacity-40"
-                    }`}
-                  >
-                    <i
-                      className={`ss ss-3x ss-${set.code} mt-[-3px] text-xl size-16 inline-flex items-center justify-center`}
-                    ></i>{" "}
-                    {/* <span>
-                    {set.name} ({set.code.toUpperCase()})
-                  </span> */}
-                  </a>
+                  <Popover>
+                    <PopoverTrigger
+                      className={`hover:underline bg-secondary rounded-[5px] block shadow-sm shadow-ring ${
+                        !checkReleased(set.releaseDate) && "opacity-40"
+                      }`}
+                    >
+                      <i
+                        className={`ss ss-3x ss-${set.code} mt-[-3px] text-xl size-16 inline-flex items-center justify-center`}
+                      ></i>
+                    </PopoverTrigger>
+                    <PopoverContent className="bg-background">
+                      <SetPopover {...set} />
+                    </PopoverContent>
+                  </Popover>
                 </li>
               ))}
             </ul>
@@ -63,19 +71,20 @@ export default function StandardSets(props: StandardSliderProps) {
                     i === 0 ? "opacity-0 pointer-events-none" : "opacity-100"
                   }`}
                 >
-                  <a
-                    href={`https://scryfall.com/sets/${set.code}`}
-                    className={`hover:underline bg-secondary rounded-[5px] block shadow-sm shadow-ring ${
-                      !checkReleased(set.releaseDate) && "opacity-40"
-                    }`}
-                  >
-                    <i
-                      className={`ss ss-3x ss-${set.code} mt-[-3px] text-xl size-16 inline-flex items-center justify-center`}
-                    ></i>{" "}
-                    {/* <span>
-                    {set.name} ({set.code.toUpperCase()})
-                  </span> */}
-                  </a>
+                  <Popover>
+                    <PopoverTrigger
+                      className={`hover:underline bg-secondary rounded-[5px] block shadow-sm shadow-ring ${
+                        !checkReleased(set.releaseDate) && "opacity-40"
+                      }`}
+                    >
+                      <i
+                        className={`ss ss-3x ss-${set.code} mt-[-3px] text-xl size-16 inline-flex items-center justify-center`}
+                      ></i>
+                    </PopoverTrigger>
+                    <PopoverContent className="bg-background">
+                      <SetPopover {...set} />
+                    </PopoverContent>
+                  </Popover>
                 </li>
               ))}
             </ul>
