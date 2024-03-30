@@ -1,13 +1,11 @@
 import data from "@/data/data.json";
-import { useRef } from "react";
-
 interface StandardSliderProps {
   className: string;
 }
 
 export default function StandardSets(props: StandardSliderProps) {
   const { className } = props;
-  const standatdYear = 3;
+  const standardYear = 3;
 
   function checkReleased(releaseDate: string) {
     const today = new Date();
@@ -29,7 +27,7 @@ export default function StandardSets(props: StandardSliderProps) {
                 <li
                   key={set.code}
                   className={`${
-                    i === standatdYear
+                    i === standardYear
                       ? "opacity-0 pointer-events-none"
                       : "opacity-100"
                   }`}
