@@ -1,5 +1,6 @@
 import StandardSlider from "@/components/StandardSlider";
 import BannedCards from "@/components/BannedCards";
+import StandardSets from "@/components/StandardSets";
 import Section from "@/components/Section";
 
 function App() {
@@ -14,6 +15,11 @@ function App() {
       <Section>
         <h3 className="text-2xl font-bold">Standard</h3>
         <StandardSlider className="mt-4" />
+      </Section>
+
+      <Section>
+        <h3 className="text-2xl font-bold">Standard</h3>
+        <StandardSets className="mt-4" />
       </Section>
 
       <Section>

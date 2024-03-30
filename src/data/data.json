@@ -2,6 +2,7 @@
   "standard": [
     {
       "legalTill": "Legal until Q4 2024",
+      "releaseYear": 2021,
       "sets": [
         {
           "name": "Innistrad: Midnight Hunt",
@@ -27,6 +28,7 @@
     },
     {
       "legalTill": "Legal until Q4 2025",
+      "releaseYear": 2022,
       "sets": [
         {
           "name": "Dominaria United",
@@ -57,6 +59,7 @@
     },
     {
       "legalTill": "Legal until Q4 2026",
+      "releaseYear": 2023,
       "sets": [
         {
           "name": "Wilds of Eldraine",
@@ -82,6 +85,7 @@
     },
     {
       "legalTill": "Legal until Q4 2027",
+      "releaseYear": 2024,
       "sets": [
         {
           "name": "Bloomburrow",
@@ -92,6 +96,16 @@
           "name": "Duskmourn: House of Horror",
           "code": "dsk",
           "releaseDate": "Q4 2024"
+        },
+        {
+          "name": "“Death Race”",
+          "code": "",
+          "releaseDate": "Q3 2025"
+        },
+        {
+          "name": "Untitled Spring 2025 Set “Ultimate”",
+          "code": "",
+          "releaseDate": "Q3 2025"
         }
       ]
     }
