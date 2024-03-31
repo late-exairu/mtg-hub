@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div
-        className={`fixed inset-0 bg-[url(./bg.jpg)] bg-cover bg-center opacity-10`}
+        className={`fixed inset-0 bg-[url(./bg.jpg)] bg-cover bg-center opacity-5`}
       />
       <div className="container relative text-foreground">
         <h1 className="text-3xl font-black">MTGHub</h1>

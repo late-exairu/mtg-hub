@@ -1,24 +1,13 @@
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-
+import SetItem from "./SetItem";
 import data from "@/data/data.json";
-import SetPopover from "./SetPopover";
-interface StandardSliderProps {
+
+interface StandardSets {
   className: string;
 }
 
-export default function StandardSets(props: StandardSliderProps) {
+export default function StandardSets(props: StandardSets) {
   const { className } = props;
   const standardYear = 3;
-
-  function checkReleased(releaseDate: string) {
-    const today = new Date();
-    const release = new Date(releaseDate);
-    return today >= release;
-  }
 
   return (
     <>
@@ -45,20 +34,7 @@ export default function StandardSets(props: StandardSliderProps) {
                       : "opacity-100"
                   }`}
                 >
-                  <Popover>
-                    <PopoverTrigger
-                      className={`hover:underline bg-card rounded-[5px] block shadow-sm shadow-ring ${
-                        !checkReleased(set.releaseDate) && "opacity-40"
-                      }`}
-                    >
-                      <i
-                        className={`ss ss-${set.code} text-4xl size-16 inline-flex items-center justify-center`}
-                      ></i>
-                    </PopoverTrigger>
-                    <PopoverContent className="bg-background">
-                      <SetPopover {...set} />
-                    </PopoverContent>
-                  </Popover>
+                  <SetItem set={set} />
                 </li>
               ))}
             </ul>
@@ -77,20 +53,7 @@ export default function StandardSets(props: StandardSliderProps) {
                     i === 0 ? "opacity-0 pointer-events-none" : "opacity-100"
                   }`}
                 >
-                  <Popover>
-                    <PopoverTrigger
-                      className={`hover:underline bg-card rounded-[5px] block shadow-sm shadow-ring ${
-                        !checkReleased(set.releaseDate) && "opacity-40"
-                      }`}
-                    >
-                      <i
-                        className={`ss ss-${set.code} text-4xl size-16 inline-flex items-center justify-center`}
-                      ></i>
-                    </PopoverTrigger>
-                    <PopoverContent className="bg-background">
-                      <SetPopover {...set} />
-                    </PopoverContent>
-                  </Popover>
+                  <SetItem set={set} />
                 </li>
               ))}
             </ul>
