@@ -12,9 +12,9 @@ function App() {
       <div className="container relative text-foreground">
         <h1 className="text-3xl font-black">MTGHub</h1>
 
-        <Section>
+        {/* <Section>
           <h3 className="text-2xl font-bold">Calendar</h3>
-        </Section>
+        </Section> */}
 
         {/* <Section>
         <h3 className="text-2xl font-bold">Standard</h3>
@@ -30,7 +30,7 @@ function App() {
           <h3 className="text-2xl font-bold">Banned cards</h3>
           <p className="mb-6">
             Despite being part of legal sets, the following cards are explicitly
-            not allowed in decks for this format.
+            not allowed in decks for standard.
           </p>
           <BannedCards />
         </Section>

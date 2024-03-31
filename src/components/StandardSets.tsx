@@ -34,7 +34,7 @@ export default function StandardSets(props: StandardSets) {
                       : "opacity-100"
                   }`}
                 >
-                  <SetItem set={set} />
+                  <SetItem set={set} currentStandard={true} />
                 </li>
               ))}
             </ul>
@@ -59,6 +59,17 @@ export default function StandardSets(props: StandardSets) {
             </ul>
           </div>
         ))}
+      </div>
+
+      <div className="text-sm mt-4">
+        <p className="flex items-center">
+          <span className="size-3 bg-uncommon mr-1 inline-block rounded-[2px]"></span>{" "}
+          - current standard
+        </p>
+        <p className="flex items-center">
+          <span className="size-3 bg-rare mr-1 inline-block rounded-[2px]"></span>{" "}
+          - next standard
+        </p>
       </div>
     </>
   );

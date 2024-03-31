@@ -20,6 +20,10 @@
     --accent-foreground: 240 5.88% 10%;
     --destructive: 0 62.73% 68.43%;
     --destructive-foreground: 0 0% 98.04%;
+    --common: 224.48 43.28% 26.27%;
+    --uncommon: 208.5 24.69% 68.24%;
+    --rare: 40.63 57.83% 67.45%;
+    --mythic: 35.04 100% 44.31%;
     --border: 240 40% 98.04%;
     --input: 177.5 68.57% 86.27%;
     --ring: 240 5.03% 64.9%;
@@ -43,6 +47,10 @@
     --accent-foreground: 0 0% 98.04%;
     --destructive: 0 62.03% 30.98%;
     --destructive-foreground: 0 0% 98.04%;
+    --common: 224.48 43.28% 26.27%;
+    --uncommon: 208.5 24.69% 68.24%;
+    --rare: 40.63 57.83% 67.45%;
+    --mythic: 35.04 100% 44.31%;
     --border: 240 3.7% 15.88%;
     --input: 240 3.7% 15.88%;
     --ring: 240 4.88% 83.92%;

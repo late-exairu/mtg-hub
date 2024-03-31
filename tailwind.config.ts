@@ -27,6 +27,9 @@ const config = {
       },
     },
     extend: {
+      fontSize: {
+        xxs: "0.60rem",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -60,6 +63,18 @@ const config = {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        common: {
+          DEFAULT: "hsl(var(--common))",
+        },
+        uncommon: {
+          DEFAULT: "hsl(var(--uncommon))",
+        },
+        rare: {
+          DEFAULT: "hsl(var(--rare))",
+        },
+        mythic: {
+          DEFAULT: "hsl(var(--mythic))",
         },
       },
       borderRadius: {
