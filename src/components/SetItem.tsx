@@ -44,7 +44,7 @@ export default function SetItem(props: SetItemProps) {
           {set.code}
         </span>
       </PopoverTrigger>
-      <PopoverContent className="bg-background">
+      <PopoverContent className="bg-background rounded-[5px]">
         <SetPopover {...set} />
       </PopoverContent>
     </Popover>
