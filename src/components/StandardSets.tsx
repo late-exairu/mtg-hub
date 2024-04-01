@@ -19,7 +19,7 @@ export default function StandardSets(props: StandardSets) {
 
               {block.rotateWith && (
                 <i
-                  className={`ss ss-x ss-${block.rotateWith} text-xl size-4 inline-flex items-center justify-center`}
+                  className={`ss ss-x ss-${block.rotateWith} -mt-1 text-xl size-4 inline-flex items-center justify-center`}
                 ></i>
               )}
             </div>
