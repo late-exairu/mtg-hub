@@ -32,14 +32,14 @@ export default function SetItem(props: SetItemProps) {
         }`}
       >
         <i
-          className={`ss ss-${set.code} text-4xl size-16 inline-flex items-center justify-center`}
+          className={`ss ss-${set.code} relative text-4xl size-16 -top-2 inline-flex items-center justify-center`}
         ></i>
         <span
           className={`${
             currentStandard
               ? "text-background bg-uncommon"
               : "text-background bg-rare"
-          } z-10 text-xxs absolute left-1/2 -bottom-1 px-1 -translate-x-1/2 bg-card shadow-sm rounded-[3px] shadow-ring text-center uppercase`}
+          } z-10 text-xxs absolute left-1/2 bottom-1 px-1 -translate-x-1/2 bg-card shadow-sm rounded-[3px] shadow-ring text-center uppercase`}
         >
           {set.code}
         </span>
