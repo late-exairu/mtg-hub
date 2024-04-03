@@ -1,6 +1,7 @@
 // import StandardSlider from "@/components/StandardSlider";
 import BannedCards from "@/components/BannedCards";
 import StandardSets from "@/components/StandardSets";
+import StandardSetsMobile from "@/components/StandardSetsMobile";
 import Section from "@/components/Section";
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
 
         <Section>
           <h3 className="text-2xl font-bold">Standard</h3>
-          <StandardSets className="mt-4" />
+          <StandardSetsMobile className="mt-4 block md:hidden" />
+          <StandardSets className="mt-4 hidden md:block" />
         </Section>
 
         <Section>

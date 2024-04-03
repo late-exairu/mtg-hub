@@ -1,5 +1,6 @@
 import SetItem from "./SetItem";
 import data from "@/data/data.json";
+import { twMerge } from "tailwind-merge";
 
 interface StandardSets {
   className: string;
@@ -10,18 +11,12 @@ export default function StandardSets(props: StandardSets) {
   const standardYear = 3;
 
   return (
-    <>
-      <div className={`${className} flex gap-2`}>
+    <div className={twMerge("", className)}>
+      <div className="flex gap-2">
         {data.standard.map((block, i) => (
           <div className="rounded-xl h-auto relative" key={i}>
             <div className="text-sm border-b-2 pb-0.5 mb-1.5 border-foreground">
               {block.legalTill}
-
-              {block.rotateWith && (
-                <i
-                  className={`ss ss-x ss-${block.rotateWith} -mt-1 text-xl size-4 inline-flex items-center justify-center`}
-                ></i>
-              )}
             </div>
 
             <ul className="flex gap-1">
@@ -83,6 +78,6 @@ export default function StandardSets(props: StandardSets) {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
