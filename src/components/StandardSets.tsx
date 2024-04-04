@@ -22,7 +22,7 @@ export default function StandardSets(props: StandardSets) {
             <ul className="flex gap-1">
               {block.sets.map((set) => (
                 <li
-                  key={set.code}
+                  key={set.name.replace(/ /g, "-").toLowerCase()}
                   className={`${
                     i === standardYear
                       ? "opacity-0 pointer-events-none"
@@ -43,7 +43,7 @@ export default function StandardSets(props: StandardSets) {
             <ul className="flex gap-1">
               {block.sets.map((set) => (
                 <li
-                  key={set.code}
+                  key={set.name.toLowerCase().replace(/ /g, "-")}
                   className={`${
                     i === 0 ? "opacity-0 pointer-events-none" : "opacity-100"
                   }`}
