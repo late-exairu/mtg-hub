@@ -39,7 +39,7 @@ export default function SetPopover(props: SetPopoverProps) {
             href={`https://scryfall.com/sets/${code}/`}
             target="_blank"
           >
-            Open on Scryfall
+            View cards on Scryfall
           </a>
           {/* <a
           className="p-1 flex-1"

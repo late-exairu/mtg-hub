@@ -57,6 +57,16 @@ export default function StandardSets(props: StandardSets) {
       </div>
 
       <div className="text-sm mt-4 flex gap-5">
+        {/* <div className="">
+          <p className="flex items-center">
+            Next set(
+            <i
+              className={`${`ss ss-one relative text-2xl lg:text-3xl xl:text-4xl -lg:top-1 mb-4 lg:mb-1 xl:mb-0 lg:size-[51px] xl:size-[63px] size-[37px] lg:-top-2 inline-flex items-center justify-center`}`}
+            ></i>
+            ) release in{" "}
+            <span className="bg-uncommon mr-1 inline-block rounded-[2px]"></span>
+          </p>
+        </div> */}
         <div className="">
           <p className="flex items-center">
             <span className="size-3 bg-uncommon mr-1 inline-block rounded-[2px]"></span>{" "}
