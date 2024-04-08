@@ -10,6 +10,34 @@ export default function StandardSets(props: StandardSets) {
   const { className } = props;
   const standardYear = 3;
 
+  const getNextSetToRelease = () => {
+    const currentDate = new Date();
+    const allSets = data.standard.reduce((acc, curr) => {
+      return acc.concat(curr.sets);
+    }, [] as Array<{ name: string; code: string; releaseDate: string }>[]);
+
+    const unreleasedSets = allSets.flat().filter((set) => {
+      const date = new Date(set.releaseDate);
+      return date >= currentDate;
+    });
+
+    return unreleasedSets[0];
+  };
+
+  const getTimeToRelease = (date: string) => {
+    const currentDate = new Date();
+    const releaseDate = new Date(date);
+    const timeToRelease = releaseDate.getTime() - currentDate.getTime();
+    const months = Math.floor(timeToRelease / (1000 * 60 * 60 * 24 * 30));
+    const days = Math.floor(
+      (timeToRelease % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)
+    );
+
+    return `${months > 0 ? `${months} months` : ""} ${days} days`;
+  };
+
+  const nextSet = getNextSetToRelease();
+
   return (
     <div className={twMerge("", className)}>
       <div className="flex gap-2">
@@ -57,16 +85,26 @@ export default function StandardSets(props: StandardSets) {
       </div>
 
       <div className="text-sm mt-4 flex gap-5">
-        {/* <div className="">
-          <p className="flex items-center">
-            Next set(
+        <div className="flex relative items-center pl-[50px]">
+          <i
+            className={`ss ss-${nextSet.code} flex text-4xl size-[42px] items-center justify-center absolute left-0 -translate-y-1/2 top-1/2`}
+          ></i>
+          <p className="flex flex-col">
+            {nextSet.name} [{nextSet.code.toUpperCase()}]
+            <span className="italic block">
+              release in {getTimeToRelease(nextSet.releaseDate)}
+              {/* {getTimeToRelease("2024-08-02")} */}
+            </span>
+          </p>
+          {/* <p className="flex items-center">
+            Next rotation(
             <i
               className={`${`ss ss-one relative text-2xl lg:text-3xl xl:text-4xl -lg:top-1 mb-4 lg:mb-1 xl:mb-0 lg:size-[51px] xl:size-[63px] size-[37px] lg:-top-2 inline-flex items-center justify-center`}`}
             ></i>
             ) release in{" "}
             <span className="bg-uncommon mr-1 inline-block rounded-[2px]"></span>
-          </p>
-        </div> */}
+          </p> */}
+        </div>
         <div className="">
           <p className="flex items-center">
             <span className="size-3 bg-uncommon mr-1 inline-block rounded-[2px]"></span>{" "}
