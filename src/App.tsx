@@ -3,6 +3,7 @@ import BannedCards from "@/components/BannedCards";
 import StandardSets from "@/components/StandardSets";
 import StandardSetsMobile from "@/components/StandardSetsMobile";
 import Section from "@/components/Section";
+import FutureEvents from "./components/FutureEvents";
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
           <h2 className="text-2xl font-bold">Standard</h2>
           <StandardSetsMobile className="mt-4 block md:hidden" />
           <StandardSets className="mt-4 hidden md:block" />
+        </Section>
+
+        <Section>
+          <FutureEvents />
         </Section>
 
         <Section>

@@ -1,7 +1,8 @@
 import { useRef, useState, useEffect } from "react";
 import { twMerge } from "tailwind-merge";
 import SetItem from "@/components/SetItem";
-import FutureEvents from "@/components/FutureEvents";
+import StandardLegend from "@/components/StandardLegend";
+
 import data from "@/data/data.json";
 
 interface StandardSetsMobile {
@@ -59,30 +60,7 @@ export default function StandardSetsMobile(props: StandardSetsMobile) {
         ))}
       </div>
 
-      <div className="text-sm mt-4 flex gap-5">
-        <div className="">
-          <p className="flex items-center">
-            <span className="size-3 bg-uncommon mr-1 inline-block rounded-[2px]"></span>{" "}
-            - current standard
-          </p>
-          <p className="flex items-center">
-            <span className="size-3 bg-rare mr-1 inline-block rounded-[2px]"></span>{" "}
-            - next standard
-          </p>
-        </div>
-        <div className="">
-          <p className="flex items-center">
-            <span className="size-3 mr-1 inline-block rounded-[2px] bg-card shadow-sm shadow-ring hover:bg-secondary"></span>{" "}
-            - set is released
-          </p>
-          <p className="flex items-center">
-            <span className="size-3 mr-1 inline-block rounded-[2px] bg-card shadow-sm shadow-ring hover:bg-secondary opacity-40"></span>{" "}
-            - set is not released
-          </p>
-        </div>
-      </div>
-
-      <FutureEvents />
+      <StandardLegend />
     </div>
   );
 }

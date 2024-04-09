@@ -5,5 +5,5 @@ type SectionProps = {
 
 export default function Section(props: SectionProps) {
   const { children } = props;
-  return <section className="py-3 md:py-4 lg:py-6">{children}</section>;
+  return <section className="py-5 lg:py-6">{children}</section>;
 }
