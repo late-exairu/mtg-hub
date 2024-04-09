@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react";
-import SetItem from "./SetItem";
 import { twMerge } from "tailwind-merge";
+import SetItem from "@/components/SetItem";
+import FutureEvents from "@/components/FutureEvents";
 import data from "@/data/data.json";
 
 interface StandardSetsMobile {
@@ -80,6 +81,8 @@ export default function StandardSetsMobile(props: StandardSetsMobile) {
           </p>
         </div>
       </div>
+
+      <FutureEvents />
     </div>
   );
 }
