@@ -42,7 +42,7 @@ export default function StandardSetsMobile(props: StandardSetsMobile) {
         />
         {data.standard.map((block, i) => (
           <div ref={blockRef} className="rounded-xl block relative" key={i}>
-            <div className="text-sm border-b text-right pb-0.5 mb-1.5 border-foreground/30">
+            <div className="text-sm border-b pb-0.5 mb-1.5 border-foreground/30">
               {block.legalTill}
             </div>
 
