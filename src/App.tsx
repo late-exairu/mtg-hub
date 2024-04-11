@@ -3,7 +3,8 @@ import BannedCards from "@/components/BannedCards";
 import StandardSets from "@/components/StandardSets";
 import StandardSetsMobile from "@/components/StandardSetsMobile";
 import Section from "@/components/Section";
-import FutureEvents from "./components/FutureEvents";
+import FutureEvents from "@/components/FutureEvents";
+import Footer from "@/components/Footer";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <div
         className={`fixed inset-0 bg-[url(./bg.jpg)] bg-cover bg-center opacity-5`}
       />
-      <div className="container relative text-foreground">
+      <div className="container z-10 relative text-foreground">
         <h1 className="text-3xl font-black">MTGHub</h1>
 
         {/* <Section>
@@ -42,6 +43,7 @@ function App() {
           <BannedCards />
         </Section>
       </div>
+      <Footer />
     </>
   );
 }
