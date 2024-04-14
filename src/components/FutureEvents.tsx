@@ -34,7 +34,7 @@ export default function FutureEvents() {
             <p className="flex flex-col">
               {nextSet.name} [{nextSet.code.toUpperCase()}]
               <span className="italic block">
-                release in {getTimeToRelease(nextSet.releaseDate)}
+                releases in {getTimeToRelease(nextSet.releaseDate)}
               </span>
             </p>
           </div>
@@ -47,9 +47,10 @@ export default function FutureEvents() {
               className={`ss ss-${setWithRotation.code} flex text-4xl size-[42px] items-center justify-center absolute left-0 -translate-y-1/2 top-1/2`}
             ></i>
             <p className="flex flex-col">
-              {setWithRotation.name} [{setWithRotation.code.toUpperCase()}]
+              with release of {setWithRotation.name} [
+              {setWithRotation.code.toUpperCase()}]
               <span className="italic block">
-                next rotation in {getTimeToRelease(setWithRotation.releaseDate)}
+                in {getTimeToRelease(setWithRotation.releaseDate)}
               </span>
             </p>
           </div>
