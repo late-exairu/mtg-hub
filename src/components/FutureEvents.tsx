@@ -34,7 +34,7 @@ export default function FutureEvents() {
             <p className="flex flex-col">
               {nextSet.name} [{nextSet.code.toUpperCase()}]
               <span className="italic block">
-                releases in {getTimeToRelease(nextSet.releaseDate)}
+                releases in {getTimeToRelease(nextSet.releaseDate)}*
               </span>
             </p>
           </div>
@@ -50,11 +50,18 @@ export default function FutureEvents() {
               with release of {setWithRotation.name} [
               {setWithRotation.code.toUpperCase()}]
               <span className="italic block">
-                in {getTimeToRelease(setWithRotation.releaseDate)}
+                in {getTimeToRelease(setWithRotation.releaseDate)}*
               </span>
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="text-sm mt-4">
+        <p className="italic">
+          *Sets are made available on MTG Arena several days in advance of their
+          official release, on Tuesdays.
+        </p>
       </div>
     </div>
   );
