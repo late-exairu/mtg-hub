@@ -34,7 +34,9 @@ export default function FutureEvents() {
             <p className="flex flex-col">
               {nextSet.name} [{nextSet.code.toUpperCase()}]
               <span className="italic block">
-                releases in {getTimeToRelease(nextSet.releaseDate)}*
+                {getTimeToRelease(nextSet.releaseDate).trim() === "0 days"
+                  ? `releases today*`
+                  : `releases in ${getTimeToRelease(nextSet.releaseDate)}*`}
               </span>
             </p>
           </div>
