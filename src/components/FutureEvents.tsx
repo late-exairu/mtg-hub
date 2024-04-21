@@ -52,7 +52,10 @@ export default function FutureEvents() {
               with release of {setWithRotation.name} [
               {setWithRotation.code.toUpperCase()}]
               <span className="italic block">
-                in {getTimeToRelease(setWithRotation.releaseDate)}*
+                {getTimeToRelease(setWithRotation.releaseDate).trim() ===
+                "0 days"
+                  ? `today*`
+                  : `in ${getTimeToRelease(nextSet.releaseDate)}*`}
               </span>
             </p>
           </div>
