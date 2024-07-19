@@ -80,6 +80,11 @@
           "name": "Outlaws of Thunder Junction",
           "code": "otj",
           "releaseDate": "2024-04-19"
+        },
+        {
+          "name": "The Big Score",
+          "code": "big",
+          "releaseDate": "2024-04-19"
         }
       ]
     },
