@@ -35,8 +35,8 @@ export default function SetItem(props: SetItemProps) {
         <i
           className={`${
             isMobile
-              ? `ss ss-${set.code} relative text-3xl lg:text-3xl xl:text-4xl -lg:top-1 mb-4 lg:mb-1 xl:mb-0 size-[50px] lg:-top-2 inline-flex items-center justify-center`
-              : `ss ss-${set.code} relative text-2xl lg:text-3xl xl:text-4xl -lg:top-1 mb-4 lg:mb-1 xl:mb-0 lg:size-[51px] xl:size-[63px] size-[37px] lg:-top-2 inline-flex items-center justify-center`
+              ? `ss ss-${set.code} relative text-3xl lg:text-3xl xl:text-4xl -lg:top-1 mb-4 lg:mb-1 xl:mb-0 size-[48px] lg:-top-2 inline-flex items-center justify-center`
+              : `ss ss-${set.code} relative text-2xl lg:text-3xl xl:text-4xl -lg:top-1 mb-4 lg:mb-1 xl:mb-0 lg:w-[48px] lg:h-[54px] xl:w-[60px] xl:h-[64px] w-[36px] h-[36px] lg:-top-2 inline-flex items-center justify-center`
           }`}
         ></i>
         <span
