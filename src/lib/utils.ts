@@ -40,6 +40,8 @@ export function getNextRotation(
     sets: Array<{ name: string; code: string; releaseDate: string }>;
   }>
 ) {
-  const lastBlock = standard[standard.length - 1];
-  return lastBlock.sets[0];
+  const standardYear = 3;
+  const lastBlock = standard[standardYear];
+
+  return !lastBlock ? null : lastBlock.sets[0];
 }

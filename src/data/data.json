@@ -73,50 +73,21 @@
         },
         {
           "name": "Duskmourn: House of Horror",
-          "code": "???",
-          "releaseDate": "Q4 2024"
+          "code": "dsk",
+          "releaseDate": "2024-09-27"
         },
         {
           "name": "“Death Race”",
           "code": "???",
-          "releaseDate": "Q3 2025"
+          "releaseDate": "2025-02-25"
         },
         {
           "name": "Untitled Spring 2025 Set “Ultimate”",
           "code": "???",
-          "releaseDate": "Q3 2025"
+          "releaseDate": "Q2 2025"
         }
       ]
     }
   ],
-  "bannedCards": [
-    {
-      "name": "The Meathook Massacre",
-      "banDate": "2022-10-10",
-      "scryfallUrl": "https://scryfall.com/card/mid/112/the-meathook-massacre",
-      "scryfallImage": "https://cards.scryfall.io/large/front/0/8/08950015-eee5-4327-888c-82dfd13bb9ad.jpg?1667629608",
-      "reason": "Banned to reduce the prevalence of black in competitive decks, chosen over other options due to its significant power level, effectiveness against specific archetypes, and dominance in Standard for over a year."
-    },
-    {
-      "name": "Fable of the Mirror-Breaker",
-      "banDate": "2023-05-29",
-      "scryfallUrl": "https://scryfall.com/card/neo/141/fable-of-the-mirror-breaker-reflection-of-kiki-jiki",
-      "scryfallImage": "https://cards.scryfall.io/large/front/2/4/24c0d87b-0049-4beb-b9cb-6f813b7aa7dc.jpg?1691108103",
-      "reason": "Banned because of its overwhelming dominance in black-red strategies, unparalleled efficiency, and limited counterplay options, leading to a reduction in the power of these decks and a desire for more meaningful deck-building choices, compounded by its high play rate across many decks."
-    },
-    {
-      "name": "Reckoner Bankbuster",
-      "banDate": "2023-05-29",
-      "scryfallUrl": "https://scryfall.com/card/neo/255/reckoner-bankbuster",
-      "scryfallImage": "https://cards.scryfall.io/large/front/2/7/279acd17-6c17-427b-a69d-fc02442ff4a3.jpg?1685368706",
-      "reason": "Banned because its widespread usage as a colorless card-advantage engine in Standard limited diversity in deck building and favored specific creature sizes, prompting a desire to promote more varied gameplay and empower cards in different colors."
-    },
-    {
-      "name": "Invoke Despair",
-      "banDate": "2023-05-29",
-      "scryfallUrl": "https://scryfall.com/card/neo/101/invoke-despair",
-      "scryfallImage": "https://cards.scryfall.io/large/front/3/5/35af9d5c-4449-4549-b549-c3ba4a67dee0.jpg?1685368727",
-      "reason": "Banned due to its dominance as a curve-topper in black-red and black-based strategies, effectively managing the battlefield, generating card advantage, and making it difficult to counterplay against removal-heavy strategies, thus negatively impacting card diversity."
-    }
-  ]
+  "bannedCards": []
 }

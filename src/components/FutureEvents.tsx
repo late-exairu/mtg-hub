@@ -44,21 +44,30 @@ export default function FutureEvents() {
 
         <div className="flex flex-col">
           <h3 className="text-base font-bold">Next rotation</h3>
-          <div className="flex relative items-center pl-[50px]">
-            <i
-              className={`ss ss-${setWithRotation.code} flex text-4xl size-[42px] items-center justify-center absolute left-0 -translate-y-1/2 top-1/2`}
-            ></i>
-            <p className="flex flex-col">
-              with release of {setWithRotation.name} [
-              {setWithRotation.code.toUpperCase()}]
-              <span className="italic block">
-                {getTimeToRelease(setWithRotation.releaseDate).trim() ===
-                "0 days"
-                  ? `today*`
-                  : `in ${getTimeToRelease(nextSet.releaseDate)}*`}
-              </span>
-            </p>
-          </div>
+          {!setWithRotation ? (
+            <div className="flex relative items-center">
+              <p className="flex flex-col">
+                No rotation scheduled
+                <span className="italic block">Stay tuned for updates</span>
+              </p>
+            </div>
+          ) : (
+            <div className="flex relative items-center pl-[50px]">
+              <i
+                className={`ss ss-${setWithRotation.code} flex text-4xl size-[42px] items-center justify-center absolute left-0 -translate-y-1/2 top-1/2`}
+              ></i>
+              <p className="flex flex-col">
+                with release of {setWithRotation.name} [
+                {setWithRotation.code.toUpperCase()}]
+                <span className="italic block">
+                  {getTimeToRelease(setWithRotation.releaseDate).trim() ===
+                  "0 days"
+                    ? `today*`
+                    : `in ${getTimeToRelease(nextSet.releaseDate)}*`}
+                </span>
+              </p>
+            </div>
+          )}
         </div>
       </div>
 

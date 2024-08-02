@@ -36,10 +36,6 @@ function App() {
 
         <Section>
           <h2 className="text-2xl font-bold">Banned cards</h2>
-          <p className="mb-6">
-            The following cards, although part of legal sets, are explicitly
-            prohibited from inclusion in decks for Standard.
-          </p>
           <BannedCards />
         </Section>
       </div>
