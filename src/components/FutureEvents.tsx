@@ -2,6 +2,7 @@ import {
   getNextRotation,
   getTimeToRelease,
   getNextSetToRelease,
+  getNextYear,
 } from "@/lib/utils";
 import data from "@/data/data.json";
 
@@ -47,7 +48,7 @@ export default function FutureEvents() {
           {!setWithRotation ? (
             <div className="flex relative items-center">
               <p className="flex flex-col">
-                No rotation scheduled
+                in Q3 {getNextYear()}
                 <span className="italic block">Stay tuned for updates</span>
               </p>
             </div>

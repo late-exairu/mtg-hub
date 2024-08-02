@@ -45,3 +45,11 @@ export function getNextRotation(
 
   return !lastBlock ? null : lastBlock.sets[0];
 }
+
+export function getNextYear() {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const nextYear = currentYear + 1;
+
+  return nextYear;
+}
